@@ -11,19 +11,19 @@ const {
   FIVE,
   FOUR,
   THREE,
-  TWO
+  TWO,
 } = require('./constants');
 
 const utils = {};
 
-utils.shortSuit = (suit) => {
+utils.shortSuit = suit => {
   if (typeof suit === 'string' && suit.length) {
     return suit.substring(0, 1);
   }
   return undefined;
 };
 
-utils.shortRank = (rank) => {
+utils.shortRank = rank => {
   switch (rank) {
     case ACE:
       return 'A';

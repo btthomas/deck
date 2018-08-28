@@ -8,7 +8,7 @@ class Deck {
     ranks.forEach(rank => {
       suits.forEach(suit => {
         this.cards.push(new Card({ suit, rank }));
-      })
+      });
     });
 
     if (options.shuffle) {
@@ -56,7 +56,7 @@ class Deck {
     }
 
     let i = 0;
-    while (this.cards.length && ((!size) || (i / hands < size))) {
+    while (this.cards.length && (!size || i / hands < size)) {
       handsArray[i % hands].push(this.dealOne());
       i++;
     }

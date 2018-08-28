@@ -1,4 +1,4 @@
-const constants = {}
+const constants = {};
 
 constants.ACE = 'ACE';
 constants.KING = 'KING';

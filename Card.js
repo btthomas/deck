@@ -68,7 +68,7 @@ class Card {
           case QUEEN:
             return 10;
           case JACK:
-            return 10;  
+            return 10;
         }
       }
     }
