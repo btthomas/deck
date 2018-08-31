@@ -12,6 +12,8 @@ const {
   FOUR,
   THREE,
   TWO,
+  faces,
+  tens,
 } = require('./constants');
 
 const utils = {};
@@ -53,6 +55,20 @@ utils.shortRank = rank => {
       return '2';
   }
   return undefined;
+};
+
+utils.isSameSuit = (card1, card2) => {
+  return card1.suit === card2.suit;
+};
+
+utils.isSameRank = (card1, card2, options = {}) => {
+  if (options.facesAreTen) {
+    // faces are the same as tens
+    if (tens.includes(card1.rank) && tens.includes(card2.rank)) {
+      return true;
+    }
+  }
+  return card1.rank === card2.rank;
 };
 
 module.exports = utils;

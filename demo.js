@@ -1,7 +1,6 @@
-const Deck = require('./Deck');
-const Card = require('./Card');
+const TheDeck = require('./index');
 
-const myDeck = new Deck();
+const myDeck = new TheDeck.Deck();
 
 // console.log(myDeck.cards.length);
 
@@ -10,7 +9,7 @@ const myDeck = new Deck();
 //   console.log(card.toShortString());
 // })
 
-const shuffledDeck = new Deck({ shuffle: true });
+const shuffledDeck = new TheDeck.Deck({ shuffle: true });
 
 // shuffledDeck.cards.forEach(card => {
 //   console.log(card.toShortString());

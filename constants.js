@@ -30,6 +30,15 @@ constants.ranks = [
   constants.TWO,
 ];
 
+constants.faces = [constants.KING, constants.QUEEN, constants.JACK];
+
+constants.tens = [
+  constants.KING,
+  constants.QUEEN,
+  constants.JACK,
+  constants.TEN,
+];
+
 constants.SPADES = 'SPADES';
 constants.DIAMONDS = 'DIAMONDS';
 constants.HEARTS = 'HEARTS';
