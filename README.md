@@ -66,6 +66,7 @@ Returns true if the cards are of the same rank. If `facesAreTen` is true, then f
 
 Tests are written with jest:
 
+```
 --------------|----------|----------|----------|----------|-------------------|
 File          |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 --------------|----------|----------|----------|----------|-------------------|
@@ -77,3 +78,4 @@ All files     |     90.6 |    82.26 |      100 |     90.6 |                   |
 --------------|----------|----------|----------|----------|-------------------|
 Test Suites: 3 passed, 3 total
 Tests:       30 passed, 30 total
+```
