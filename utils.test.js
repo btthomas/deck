@@ -81,7 +81,9 @@ describe('utils', () => {
     });
 
     it('returns false for different ranks if options.facesAreTen', () => {
-      expect(isSameRank(KING_OF_CLUBS, ACE_OF_CLUBS, { facesAreTen: true })).toBeFalsy();
+      expect(
+        isSameRank(KING_OF_CLUBS, ACE_OF_CLUBS, { facesAreTen: true })
+      ).toBeFalsy();
     });
   });
 });

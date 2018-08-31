@@ -39,7 +39,7 @@ class Deck {
     if (this.cards.length) {
       return this.cards[0];
     }
-    return undefined
+    return undefined;
   }
 
   // returns the next card

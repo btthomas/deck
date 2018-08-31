@@ -71,7 +71,6 @@ describe('Deck', () => {
     });
   });
 
-
   it('can peek/deal nothing if the deck has already been delt', () => {
     deck.deal();
 
