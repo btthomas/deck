@@ -1,4 +1,4 @@
-### Deck of Cards
+# Deck of Cards
 
 ## installation
 
@@ -17,7 +17,7 @@ deck uses common.js modules (no import yet)
 
 ## API
 
-# Deck
+#### Deck
 Models a deck.
 
 `Deck.shuffle()`
@@ -32,7 +32,7 @@ Deals the top Card.
 `Deck.deal({ hands, size })`
 Deals the deck out in `hands` many hands. Returns an array of array of Card If size is undefined, it will deal whatever is remaining in the deck. If size is defined, it will deal `size` many cards to `hands` many hands. 
 
-# Card
+#### Card
 Models a card.
 
 `Card.toString()`
@@ -45,7 +45,7 @@ Returns a shortened string representation of a card, e.g. `'AS'`.
 Returns the "value" of a card.
 E.g. A TWO is 2. An ACE may return 1, 11, or 14. a KING may return 10 or 13.
 
-# utils
+#### utils
 helpful utilities
 
 `utils.shortSuit()`
