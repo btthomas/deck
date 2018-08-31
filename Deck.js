@@ -2,8 +2,14 @@ const { ranks, suits } = require('./constants');
 const Card = require('./Card');
 
 class Deck {
+  // [0] is the "top" of the deck!
   constructor(options = {}) {
     this.cards = [];
+
+    // TODO let the user pick a smaller/larger deck
+    // e.g. Pinochle is 8 each of nines to aces
+
+    // TODO let the user include 1 or 2 jokers
 
     ranks.forEach(rank => {
       suits.forEach(suit => {
@@ -33,6 +39,7 @@ class Deck {
     if (this.cards.length) {
       return this.cards[0];
     }
+    return undefined
   }
 
   // returns the next card
@@ -45,7 +52,7 @@ class Deck {
   }
 
   // returns an array of arrays of Card
-  deal({ hands = 4, size }) {
+  deal({ hands = 4, size } = {}) {
     if (hands <= 0) {
       return [];
     }

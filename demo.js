@@ -22,8 +22,10 @@ const hands = shuffledDeck.deal({ hands: 4, size: 5 });
 
 hands.forEach((hand, index) => {
   console.log('hand: ', index);
-  console.log(hand.join(', '));
+  console.log(hand.map(card => card.toShortString()).join(', '));
 
   console.log(hand.map(card => card.getVal()).join(', '));
 });
 console.log(shuffledDeck.cards.length);
+
+console.log(myDeck.cards.map(card => card.toShortString()).join(''));
