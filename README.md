@@ -11,9 +11,12 @@ works with node 10.7 and npm 6.1
 
 deck uses common.js modules (no import yet)
 
-`const { Deck, Card } = require('./');`
+`const { Deck, Card, ...utils } = require('./');`
+
 `const deck = new Deck();`
+
 `const card = new Card({ suit: 'SPADES', rank: 'ACE' });`
+
 
 ## API
 
